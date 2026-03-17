@@ -8,6 +8,11 @@ export default defineNuxtConfig({
     "shadcn-nuxt",
   ],
 
+  image: {
+    quality: 80,
+    format: ["webp", "jpg"],
+  },
+
   devtools: { enabled: true },
   compatibilityDate: "2024-04-03",
 
@@ -21,12 +26,12 @@ export default defineNuxtConfig({
       htmlAttrs: { lang: "fr" },
       charset: "utf-8",
       viewport: "width=device-width, initial-scale=1",
-      title: "Divan des Sultanes — Coaching de leadership au féminin",
+      title: "Divan des Sultanes — coaching • consulting • facilitation",
       meta: [
         {
           name: "description",
           content:
-            "Coaching de leadership au féminin — Accompagnement de dirigeantes, managers et femmes en responsabilité.",
+            "Un espace pour penser autrement la responsabilité, le pouvoir et la manière de diriger. coaching • consulting • facilitation.",
         },
         { property: "og:type", content: "website" },
         { property: "og:locale", content: "fr_FR" },
@@ -38,7 +43,8 @@ export default defineNuxtConfig({
   googleFonts: {
     families: {
       "Playfair Display": [400, 700],
-      Quicksand: [400, 500, 600, 700],
+      Quicksand: [300, 400, 500, 600, 700],
+      Parisienne: [400],
     },
     display: "swap",
   },

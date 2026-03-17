@@ -8,7 +8,7 @@ const navItems = [
   { label: "L'Odyssée", to: '/odyssee' },
   { label: "L'Atelier", to: '/atelier' },
   { label: 'Coaching', to: '/coaching' },
-  { label: 'Entreprises', to: '/entreprises' },
+  { label: 'Hospitalité de luxe', to: '/hospitalite' },
   { label: 'Blog', to: '/blog' },
   { label: 'Contact', to: '/contact' },
 ]
@@ -26,8 +26,8 @@ const navItems = [
             {{ config.site.nom }}
           </NuxtLink>
           <p class="mt-4 text-sm leading-relaxed text-white/50">
-            Coaching de leadership au féminin.<br>
-            Accompagnement de dirigeantes, managers et femmes en responsabilité.
+            Un espace pour penser autrement la responsabilité, le pouvoir et la manière de diriger.<br>
+            coaching • consulting • facilitation
           </p>
         </div>
 

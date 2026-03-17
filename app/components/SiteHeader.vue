@@ -34,14 +34,14 @@ const serviceItems = [
 ]
 
 const flatNavItems = [
-  { label: 'Entreprises', to: '/entreprises' },
+  { label: 'Hospitalité de luxe', to: '/hospitalite' },
   { label: 'Blog', to: '/blog' },
   { label: 'Contact', to: '/contact' },
 ]
 
 const mobileNavItems = [
   { label: 'Accueil', to: '/' },
-  { label: 'Entreprises', to: '/entreprises' },
+  { label: 'Hospitalité de luxe', to: '/hospitalite' },
   { label: 'Blog', to: '/blog' },
   { label: 'Contact', to: '/contact' },
 ]
@@ -250,7 +250,7 @@ onUnmounted(() => {
           <!-- Bottom accent -->
           <div class="shrink-0 pb-safe px-6 pb-8 text-center">
             <div class="h-px mb-5 bg-gradient-to-r from-transparent via-gold-400/30 to-transparent" />
-            <p class="text-xs text-white/30">Coaching de leadership au féminin</p>
+            <p class="text-xs text-white/30">coaching • consulting • facilitation</p>
           </div>
         </nav>
       </Transition>

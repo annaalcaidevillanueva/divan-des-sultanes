@@ -17,6 +17,8 @@ withDefaults(
       class="absolute inset-0 w-full h-full object-cover scale-105"
       loading="eager"
       sizes="100vw"
+      width="1920"
+      height="1080"
     />
     <!-- Multi-layer overlay for depth and warmth -->
     <div

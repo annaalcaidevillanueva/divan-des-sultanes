@@ -10,7 +10,7 @@
 @tailwind utilities;
 
 @theme inline {
-  --font-heading: "Playfair Display", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-heading: "Quicksand", ui-sans-serif, system-ui, sans-serif;
   --font-sans: "Quicksand", ui-sans-serif, system-ui, sans-serif;
 
   --radius-sm: calc(var(--radius) - 4px);

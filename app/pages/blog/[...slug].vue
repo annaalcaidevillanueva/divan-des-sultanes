@@ -29,6 +29,8 @@ useSeoMeta({
         class="w-full h-full object-cover"
         loading="eager"
         sizes="100vw"
+        width="1920"
+        height="823"
       />
     </div>
 

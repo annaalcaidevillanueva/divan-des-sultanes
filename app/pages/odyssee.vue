@@ -2,10 +2,10 @@
 const config = useAppConfig()
 
 useSeoMeta({
-  title: "L'Odyssée — Parcours initiatique de leadership au féminin | Divan des Sultanes",
-  ogTitle: "L'Odyssée — Parcours initiatique de leadership au féminin",
-  description: 'Une traversée de neuf mois pour déplacer sa posture en profondeur. Parcours collectif, exigeant et transformateur pour femmes dirigeantes.',
-  ogDescription: 'Une traversée de neuf mois pour déplacer sa posture en profondeur. Parcours collectif, exigeant et transformateur pour femmes dirigeantes.',
+  title: "L'Odyssée des Sultanes — Transformer sa manière d'être au pouvoir | Divan des Sultanes",
+  ogTitle: "L'Odyssée des Sultanes — Transformer sa manière d'être au pouvoir",
+  description: 'Un parcours de neuf mois pour les femmes francophones qui dirigent. Coaching collectif, immersions au Maroc, transformation durable.',
+  ogDescription: 'Un parcours de neuf mois pour les femmes francophones qui dirigent. Coaching collectif, immersions au Maroc, transformation durable.',
   ogImage: '/img/3.jpg',
 })
 </script>
@@ -13,25 +13,19 @@ useSeoMeta({
 <template>
   <div>
     <!-- Hero -->
-    <HeroSection image="/img/3.jpg" image-alt="L'Odyssée — Parcours de leadership au féminin">
-      <p class="text-gold-300 text-sm font-semibold uppercase tracking-[0.25em] mb-4">Parcours transformateur</p>
-      <h1 class="text-white mb-4 hero-text-shadow">L'Odyssée</h1>
+    <HeroSection image="/img/3.jpg" image-alt="L'Odyssée des Sultanes">
+      <p class="text-gold-300 text-sm font-semibold uppercase tracking-[0.25em] mb-4">Transformer sa manière d'être au pouvoir</p>
+      <h1 class="text-white mb-4 hero-text-shadow">L'Odyssée Des Sultanes</h1>
       <p class="text-lg md:text-xl text-white/85 max-w-2xl mx-auto">
-        Parcours initiatique de leadership au féminin — 9 mois
+        Un parcours pour les femmes francophones qui dirigent
       </p>
     </HeroSection>
 
     <!-- Introduction -->
     <section class="section-spacing">
       <div class="container-page prose-divan max-w-3xl mx-auto">
-        <p>Il y a des moments où l'on ne cherche pas un outil de plus.</p>
-        <p>On sent qu'un cycle doit s'ouvrir.</p>
-        <p>L'Odyssée est une traversée de neuf mois. Comme une gestation. Le temps nécessaire pour déplacer sa posture en profondeur.</p>
-        <p>Ce n'est pas une formation.</p>
-        <p>Ce n'est pas un séminaire.</p>
-        <p>Ce n'est pas un programme de développement personnel.</p>
-        <p><strong>C'est un parcours structuré, exigeant, accompagné.</strong></p>
-        <p>Un travail de transformation durable de la manière d'être en responsabilité.</p>
+        <p>Il y a des moments où l'on ne cherche pas un outil de plus. On sent qu'un cycle doit s'ouvrir. L'Odyssée est une traversée de neuf mois. Comme une gestation. Le temps nécessaire pour déplacer sa posture en profondeur.</p>
+        <p>Ce n'est pas une formation. Ce n'est pas un séminaire. Ce n'est pas un programme de développement personnel. C'est un parcours structuré, exigeant, accompagné. Un travail de transformation durable de la manière d'être en responsabilité.</p>
       </div>
     </section>
 
@@ -41,102 +35,52 @@ useSeoMeta({
     <section class="section-spacing">
       <div class="container-page prose-divan max-w-3xl mx-auto">
         <h2>À qui s'adresse l'Odyssée ?</h2>
-        <p>À des femmes francophones qui dirigent déjà.</p>
-        <p>Dirigeantes, entrepreneures, membres de CODIR, responsables d'équipes, cheffes de projets.</p>
-        <p>Des femmes compétentes. Engagées. Exigeantes envers elles-mêmes.</p>
-        <p>Des femmes qui tiennent beaucoup.</p>
-        <p>Et qui savent qu'un déplacement intérieur est devenu nécessaire pour continuer à croître sans se durcir.</p>
+        <p>À des femmes francophones qui dirigent déjà : dirigeantes, entrepreneures, membres de CODIR, responsables d'équipes, cheffes de projets. Des femmes compétentes. Engagées. Exigeantes envers elles-mêmes. Des femmes qui tiennent beaucoup, et qui savent qu'un déplacement intérieur est devenu nécessaire pour continuer à croître sans se durcir.</p>
       </div>
     </section>
 
     <SectionDivider />
 
-    <!-- Le cadre -->
+    <!-- Le Cadre -->
     <section class="section-spacing">
       <div class="container-page prose-divan max-w-3xl mx-auto">
-        <h2>Le cadre</h2>
-        <p>L'Odyssée se vit en petit groupe. Un cercle volontairement restreint pour permettre profondeur, vérité et responsabilité partagée.</p>
-        <p>Chaque participante s'engage pour neuf mois.</p>
-        <p>Le groupe ne se constitue pas à date fixe. Il se forme lorsque les femmes justes sont là.</p>
-        <p>Il ne s'agit pas de remplir. Il s'agit de composer un ensemble cohérent.</p>
+        <h2>Le Cadre : Un Cercle Restreint</h2>
+        <p>L'Odyssée se vit en petit groupe. Un cercle volontairement limité à huit participantes pour permettre profondeur, vérité et responsabilité partagée.</p>
+        <p>Le groupe ne se constitue pas à date fixe : il se forme lorsque les 8 femmes justes sont là.</p>
       </div>
     </section>
 
     <SectionDivider />
 
-    <!-- Le rythme — 9 mois -->
+    <!-- Le Rythme — 3 Piliers -->
     <section class="section-spacing">
       <div class="container-page prose-divan max-w-3xl mx-auto">
-        <h2>Le rythme — 9 mois</h2>
-        <p>Le parcours s'organise autour de trois piliers complémentaires :</p>
+        <h2>Le Rythme — 3 Piliers sur 9 mois</h2>
 
-        <!-- Pilier 1 -->
-        <h3>1. Le travail collectif en distanciel</h3>
-        <p>Deux à trois rencontres par mois, en visio. Des ateliers menés et structurés par une coach professionnelle certifiée Coach & Team®.</p>
-        <p>Ces temps ne sont pas des discussions libres. Ils sont construits, tenus, régulés.</p>
-        <p>On y travaille :</p>
+        <h3>Le travail collectif en distanciel</h3>
+        <p>Deux à trois rencontres mensuelles en visioconférence, structurées par une coach professionnelle certifiée Coach &amp; Team®. Ces sessions sont construites et régulées pour travailler sur :</p>
         <ul>
-          <li>les situations réelles apportées par les participantes,</li>
-          <li>les tensions de posture et les dilemmes de leadership,</li>
-          <li>le sentiment de ne pas être "assez" malgré les compétences et les résultats,</li>
-          <li>la difficulté à occuper pleinement sa place dans des environnements exigeants,</li>
-          <li>la relation au pouvoir et au contrôle,</li>
-          <li>la solitude de la décision,</li>
-          <li>les dynamiques d'équipe et les jeux d'influence,</li>
-          <li>la régulation émotionnelle dans des contextes de pression.</li>
+          <li>Les situations réelles et les dilemmes de leadership.</li>
+          <li>La relation au pouvoir, au contrôle et la solitude de la décision.</li>
+          <li>La régulation émotionnelle et la capacité à occuper pleinement sa place.</li>
+          <li>Un espace confidentiel de co-développement pour aligner pensée, émotion et posture.</li>
         </ul>
-
-        <p>Le cadre permet :</p>
-        <ul>
-          <li>du coaching collectif structuré et exigeant,</li>
-          <li>du co-développement à partir de situations professionnelles réelles,</li>
-          <li>des exercices expérientiels ancrés dans la pratique managériale,</li>
-          <li>des temps de recul et de mise en conscience stratégique,</li>
-          <li>un espace confidentiel où la confiance se construit dans la durée,</li>
-          <li>un travail d'alignement entre pensée, émotion et posture.</li>
-        </ul>
-        <p>Le rythme respecte la réalité d'agendas exigeants. Entre les sessions : intégration et mise en pratique dans la vie professionnelle.</p>
+        <p>Le parcours se prolonge par deux rendez-vous de « retour d'expérience » à 3 et 6 mois en visio. Un temps pour le plaisir de se retrouver et de partager la manière dont vos transformations s'incarnent, jour après jour, dans votre réalité.</p>
 
         <SectionDivider />
 
-        <!-- Pilier 2 -->
-        <h3>2. Le coaching individuel</h3>
-        <p>Chaque participante bénéficie de <strong>cinq séances individuelles</strong> réparties sur le parcours.</p>
-        <p>Un espace confidentiel pour approfondir ce qui se joue dans sa posture professionnelle. Clarifier une tension de responsabilité. Traverser une zone de décision. Travailler un déplacement précis dans sa manière d'exercer son leadership.</p>
-        <p>Le collectif éclaire. L'individuel permet d'aller plus loin, avec finesse et exigence.</p>
+        <h3>Le coaching individuel</h3>
+        <p>Chaque participante bénéficie de cinq séances individuelles. Un espace pour approfondir ce qui se joue dans sa propre responsabilité, clarifier une tension précise et traverser ses zones de décision avec finesse.</p>
 
         <SectionDivider />
 
-        <!-- Pilier 3 -->
-        <h3>3. Les immersions présentielles au Maroc</h3>
+        <h3>Les immersions au Maroc (Sidi Kaouki)</h3>
 
-        <h3 class="!mt-8">La première immersion — Ouvrir</h3>
-        <p>Elle ouvre le parcours. Elle est essentielle.</p>
-        <p>Ces premiers jours, au Maroc, à Sidi Kaouki, permettent de créer l'alliance : entre les participantes, et entre le groupe et moi.</p>
-        <p>Nous y construisons les fondations du cadre. La qualité de présence. La sécurité relationnelle. La confiance qui rend possible la profondeur.</p>
-        <p>Ce temps correspond à une véritable phase d'inclusion. Chacune trouve sa place. Les postures professionnelles se déposent progressivement. La parole devient plus vraie.</p>
-        <p>Mais il se passe aussi autre chose.</p>
-        <p>Le Maroc impulse un autre tempo. Un rythme plus organique. Moins fragmenté. Moins pressé.</p>
-        <p>Le vent, la lumière, l'horizon ouvert sur l'Atlantique nous ramènent à l'essentiel.</p>
-        <p>Face à l'océan, les tensions reprennent leur juste proportion. Le contrôle peut légèrement se desserrer. Le corps respire autrement.</p>
-        <p>Ce changement de rythme n'est pas un luxe. <strong>Il est nécessaire.</strong> Il pose l'énergie des neuf mois à venir.</p>
+        <h3 class="!mt-8">L'envol</h3>
+        <p>3 jours pour créer l'alliance et la sécurité relationnelle. Le rythme organique du Maroc, entre vent et lumière, permet de déposer les armures et de poser l'énergie des neuf mois à venir.</p>
 
-        <h3 class="!mt-8">La seconde immersion — Ancrer et consacrer</h3>
-        <p>Elle vient clore la traversée. Nous revenons au Maroc. À Sidi Kaouki. De nouveau dans ce cadre magique.</p>
-        <p>Revenir au même lieu n'est pas anodin. C'est retrouver le point d'origine. Mais transformées.</p>
-        <p>Ce second temps permet d'intégrer pleinement le chemin parcouru. Les déplacements opérés pendant neuf mois prennent corps. Ils se disent. Ils se reconnaissent. Ils s'assument.</p>
-        <p>L'océan est toujours là. Mais le regard a changé.</p>
-        <p>Le rythme, à nouveau plus organique, permet de ralentir suffisamment pour mesurer la transformation.</p>
-        <p>Cette immersion est un temps d'ancrage. Nous y vivons :</p>
-        <ul>
-          <li>des expériences corporelles et symboliques,</li>
-          <li>des temps de parole profonds,</li>
-          <li>des rituels de clôture,</li>
-          <li>un travail d'intégration stratégique pour le retour dans l'environnement professionnel.</li>
-        </ul>
-        <p>Ce n'est pas une parenthèse hors du réel. C'est un pont vers la suite.</p>
-        <p>Nous retrouvons cette bulle de confiance et de sérénité construite au fil des mois. Une sororité consciente. Un cercle qui a appris à se dire les choses sans se blesser.</p>
-        <p><strong>La clôture n'est pas une fin. C'est une consécration du chemin parcouru.</strong></p>
+        <h3 class="!mt-8">Ancrage et consécration</h3>
+        <p>4 jours pour revenir au point d'origine, mais transformée. Un temps pour mesurer le chemin parcouru, intégrer les déplacements et vivre des rituels de clôture avant le retour en environnement professionnel.</p>
       </div>
     </section>
 
@@ -149,19 +93,8 @@ useSeoMeta({
         <p>L'Odyssée travaille à un niveau que l'on nomme rarement.</p>
         <p>La relation au contrôle. La manière d'habiter le pouvoir. La posture face à la tension. La capacité à réguler plutôt qu'à maîtriser.</p>
         <p><strong>Il ne s'agit pas d'apprendre plus. Il s'agit d'être autrement.</strong></p>
-      </div>
-    </section>
-
-    <SectionDivider />
-
-    <!-- Après les neuf mois -->
-    <section class="section-spacing">
-      <div class="container-page prose-divan max-w-3xl mx-auto">
-        <h2>Après les neuf mois</h2>
-        <p>La fin du parcours n'est pas une rupture.</p>
-        <p>Un temps de retour d'expérience collectif (REX) est organisé. Un moment pour mesurer les déplacements opérés.</p>
-        <p>Un système de parrainage et de mentoring permet de prolonger le lien, soutenir l'intégration, et renforcer la continuité de la sororité.</p>
-        <p>L'Odyssée crée un réseau vivant. Pas un club. Un cercle de femmes qui ont traversé ensemble.</p>
+        <p>Après le parcours, un système de mentorat et de parrainage prolonge le lien.</p>
+        <p>Créant un réseau vivant de femmes ayant traversé un même espace.</p>
       </div>
     </section>
 
@@ -170,18 +103,18 @@ useSeoMeta({
     <!-- Investissement -->
     <section class="section-spacing">
       <div class="container-page max-w-xl mx-auto">
-        <h2 class="text-center mb-8 heading-gold">L'investissement</h2>
-        <p class="text-center text-muted-foreground mb-8">L'Odyssée représente un engagement sur neuf mois.</p>
+        <h2 class="text-center mb-8 heading-gold">L'Investissement</h2>
+        <p class="text-center text-muted-foreground mb-8">L'Odyssée représente un engagement conscient sur neuf mois.</p>
 
         <PricingBlock prix="8 000 €">
+          <p class="text-sm text-muted-foreground text-left mb-4">Ce qui est inclus :</p>
           <ul class="text-sm text-muted-foreground text-left space-y-2 mb-6">
-            <li>L'ensemble des ateliers collectifs en distanciel</li>
-            <li>Les séances de coaching individuel</li>
-            <li>Les deux immersions présentielles à Sidi Kaouki (hébergement et pension complète)</li>
-            <li>Les transferts depuis l'aéroport d'Essaouira</li>
-            <li>Le suivi et le cadre sur toute la durée du parcours</li>
+            <li>L'ensemble des ateliers collectifs et le cadre sur 9 mois.</li>
+            <li>Les 5 séances de coaching individuel.</li>
+            <li>Les deux immersions à Sidi Kaouki (hébergement de standing et pension complète).</li>
+            <li>Les transferts depuis l'aéroport d'Essaouira.</li>
           </ul>
-          <p class="text-xs text-muted-foreground mb-4">Les vols ne sont pas inclus. Un échelonnement est possible.</p>
+          <p class="text-xs text-muted-foreground italic">Note : Les vols ne sont pas inclus. Un échelonnement de paiement est possible.</p>
         </PricingBlock>
       </div>
     </section>
@@ -191,19 +124,12 @@ useSeoMeta({
     <!-- L'entrée dans l'Odyssée -->
     <section class="section-spacing">
       <div class="container-page prose-divan max-w-3xl mx-auto text-center">
-        <h2 class="heading-gold">L'entrée dans l'Odyssée</h2>
-        <p>On n'entre <strong>pas</strong> dans l'Odyssée par curiosité.</p>
-        <p>On y entre par discernement.</p>
-        <p>Un rendez-vous préalable est nécessaire pour vérifier :</p>
-        <ul class="text-left max-w-md mx-auto">
-          <li>que le moment est juste,</li>
-          <li>que l'engagement est conscient,</li>
-          <li>que le groupe sera cohérent.</li>
-        </ul>
-        <p>L'Odyssée est un seuil. Certaines sentent immédiatement que c'est le leur.</p>
+        <h2 class="heading-gold">L'entrée dans l'Odyssée : Le Discernement</h2>
+        <p>On n'entre pas dans l'Odyssée par curiosité, mais par discernement.</p>
+        <p>Un rendez-vous préalable est nécessaire pour vérifier que le moment est juste pour vous et que l'alchimie du groupe sera préservée.</p>
 
         <div class="mt-10">
-          <CtaButton :href="config.reservations.calendlyDiscernement || '/contact'" arrow>
+          <CtaButton href="https://cal.com/anna-alcaide-villanueva-divan-des-sultanes/30min" arrow>
             Prendre un rendez-vous de discernement
           </CtaButton>
         </div>

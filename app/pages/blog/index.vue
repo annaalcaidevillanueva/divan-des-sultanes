@@ -25,10 +25,22 @@ const { data: posts } = await useAsyncData('blog-posts', () =>
     <!-- Intro -->
     <section class="section-spacing">
       <div class="container-page prose-divan max-w-3xl mx-auto text-center">
+        <h3 class="heading-gold">La Voix des Sultanes</h3>
+        <p class="italic">Un espace de pensée et de transmission</p>
         <p>Il y a ce qui se travaille en séance.</p>
         <p>Et il y a ce qui continue de murmurer entre les lignes.</p>
-        <p>La Voix des Sultanes est un lieu où j'écris. Où je parle. Où je déplie certaines questions qui traversent le leadership.</p>
-        <p>Parce que diriger ne se limite pas à décider. Diriger engage un rapport au pouvoir, au contrôle, au doute, au silence.</p>
+        <p>La Voix des Sultanes est un espace où j'écris.<br>
+        Où je parle.<br>
+        Où je déplie certaines des questions qui traversent le leadership.</p>
+        <p>Parce que diriger ne se limite pas à décider.<br>
+        Diriger engage un rapport au pouvoir, au contrôle, au doute, au silence.</p>
+        <p>C'est aussi un espace de partage.</p>
+        <p>J'y déposerai parfois des textes, des pensées, des lectures, des rituels.<br>
+        Des choses rencontrées en chemin.<br>
+        D'autres que je crée et que je souhaite transmettre.</p>
+        <p>Parfois sous forme d'articles.<br>
+        Parfois sous forme d'audio, pour laisser certaines questions résonner autrement.</p>
+        <p><strong>Ici, j'explore ces territoires et j'en partage les traces.</strong></p>
       </div>
     </section>
 
@@ -52,6 +64,8 @@ const { data: posts } = await useAsyncData('blog-posts', () =>
                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   loading="lazy"
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  width="800"
+                  height="450"
                 />
               </div>
               <CardHeader>

@@ -2,10 +2,10 @@
 const config = useAppConfig()
 
 useSeoMeta({
-  title: 'Coaching individuel — Posture professionnelle | Divan des Sultanes',
-  ogTitle: 'Coaching individuel — Posture professionnelle',
-  description: 'Un espace confidentiel pour travailler votre posture professionnelle. Séances individuelles pour dirigeantes et managers.',
-  ogDescription: 'Un espace confidentiel pour travailler votre posture professionnelle. Séances individuelles pour dirigeantes et managers.',
+  title: 'Coaching — Accompagnement individuel et d\'équipe | Divan des Sultanes',
+  ogTitle: 'Coaching — Accompagnement individuel et d\'équipe',
+  description: 'Déplacer sa posture pour pacifier les relations et susciter l\'engagement, au service de l\'individu, de l\'équipe et de l\'organisation.',
+  ogDescription: 'Déplacer sa posture pour pacifier les relations et susciter l\'engagement.',
   ogImage: '/img/5.jpg',
 })
 </script>
@@ -13,17 +13,22 @@ useSeoMeta({
 <template>
   <div>
     <!-- Hero -->
-    <HeroSection image="/img/5.jpg" image-alt="Coaching individuel — Divan des Sultanes">
-      <p class="text-gold-300 text-sm font-semibold uppercase tracking-[0.25em] mb-4">Accompagnement sur mesure</p>
-      <h1 class="text-white mb-4 hero-text-shadow">Coaching individuel</h1>
+    <HeroSection image="/img/5.jpg" image-alt="Coaching — Divan des Sultanes">
+      <p class="text-gold-300 text-sm font-semibold uppercase tracking-[0.25em] mb-4">Accompagnement individuel et d'équipe</p>
+      <h1 class="text-white mb-4 hero-text-shadow">Coaching</h1>
       <p class="text-lg md:text-xl text-white/85 max-w-2xl mx-auto">
-        Un espace confidentiel pour travailler votre posture professionnelle
+        Déplacer sa posture pour pacifier les relations et susciter l'engagement,<br>
+        au service de l'individu, de l'équipe et de l'organisation.
       </p>
     </HeroSection>
 
-    <!-- Introduction -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- COACHING INDIVIDUEL -->
+    <!-- ═══════════════════════════════════════════════ -->
     <section class="section-spacing">
       <div class="container-page prose-divan max-w-3xl mx-auto">
+        <h2 class="heading-gold text-center">Coaching individuel</h2>
+
         <p>Il arrive qu'un moment appelle plus de précision.</p>
         <p>Une décision difficile. Une tension relationnelle. Une responsabilité qui pèse. Un besoin de clarifier sa posture.</p>
         <p>Le coaching individuel offre un espace confidentiel, exigeant et structuré pour travailler en profondeur ce qui se joue dans votre exercice professionnel.</p>
@@ -42,60 +47,56 @@ useSeoMeta({
 
     <SectionDivider />
 
-    <!-- Les formats -->
+    <!-- Formats d'accompagnement -->
     <section class="section-spacing">
       <div class="container-page max-w-4xl mx-auto">
-        <h2 class="text-center mb-12">Les formats d'accompagnement</h2>
+        <h2 class="text-center mb-4">Les formats d'accompagnement</h2>
+        <h3 class="text-center mb-12 text-muted-foreground !text-base font-normal">Séances ponctuelles</h3>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-          <!-- Séance approfondie -->
+          <!-- Séance d'ancrage -->
           <Card>
             <CardHeader>
-              <CardTitle>Séance approfondie</CardTitle>
+              <CardTitle>La séance d'ancrage</CardTitle>
               <CardDescription>1h30 de travail en profondeur</CardDescription>
             </CardHeader>
             <CardContent>
               <p class="text-muted-foreground text-sm mb-4">
-                Un temps suffisant pour poser une situation, l'explorer avec précision, et ouvrir des pistes concrètes de transformation.
+                Le temps nécessaire pour déposer une situation, l'explorer avec justesse et ouvrir des pistes de transformation durable.
               </p>
               <p class="text-2xl font-bold text-foreground">350 €</p>
             </CardContent>
           </Card>
 
-          <!-- Flash coaching -->
+          <!-- Coaching Flash -->
           <Card>
             <CardHeader>
-              <CardTitle>Flash coaching</CardTitle>
+              <CardTitle>Coaching Flash</CardTitle>
               <CardDescription>45 minutes ciblées</CardDescription>
             </CardHeader>
             <CardContent>
               <p class="text-muted-foreground text-sm mb-4">
-                Pour un besoin ponctuel, une décision à éclairer, une situation à débloquer rapidement.
+                Un temps court pour éclairer une décision urgente, débloquer une situation précise ou retrouver de la clarté dans l'action.
               </p>
               <p class="text-2xl font-bold text-foreground">200 €</p>
             </CardContent>
           </Card>
         </div>
 
-        <!-- Parcours -->
-        <h3 class="text-center mb-8">Parcours d'accompagnement</h3>
-        <p class="text-center text-muted-foreground max-w-2xl mx-auto mb-8">
-          Pour un travail plus structuré dans le temps, il est possible de s'engager sur un forfait :
-        </p>
+        <!-- Forfaits -->
+        <h3 class="text-center mb-8">Forfaits</h3>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
           <PricingBlock prix="1 650 €" details="au lieu de 1 750 €">
-            <p class="text-sm text-muted-foreground font-medium">5 séances de 1h30</p>
+            <p class="text-sm text-muted-foreground font-medium mb-2">5 séances de 1h30</p>
+            <p class="text-xs text-muted-foreground">Pour stabiliser un changement de posture et dénouer une problématique complexe.</p>
           </PricingBlock>
 
-          <PricingBlock prix="1 950 €" details="au lieu de 2 100 €">
-            <p class="text-sm text-muted-foreground font-medium">6 séances de 1h30</p>
+          <PricingBlock prix="3 300 €" details="au lieu de 3 500 €">
+            <p class="text-sm text-muted-foreground font-medium mb-2">10 séances de 1h30</p>
+            <p class="text-xs text-muted-foreground">Une traversée complète pour ancrer durablement la pacification des relations et votre impact de leader.</p>
           </PricingBlock>
         </div>
-
-        <p class="text-center text-sm text-muted-foreground mt-6">
-          Les séances sont planifiées sur une période définie ensemble, afin de garantir continuité et profondeur.
-        </p>
       </div>
     </section>
 
@@ -105,24 +106,112 @@ useSeoMeta({
     <section class="section-spacing">
       <div class="container-page prose-divan max-w-3xl mx-auto">
         <h2>Modalités</h2>
-        <p>Les séances se déroulent :</p>
-        <ul>
-          <li>en visioconférence</li>
-          <li>ou en présentiel (les frais de déplacement sont alors pris en charge)</li>
-        </ul>
-        <p>Chaque accompagnement débute par un échange préalable afin de vérifier l'adéquation entre votre besoin et le cadre proposé.</p>
-        <p>Le coaching individuel est un espace de responsabilité. Un lieu où l'on peut penser autrement, sans masque, sans performance, avec exigence et clarté.</p>
+        <p>Les séances se déroulent<br>
+        &nbsp;en visioconférence<br>
+        &nbsp;ou en présentiel.<br>
+        &nbsp;Dans ce cas, les frais de déplacement sont pris en charge.</p>
+        <p>Chaque accompagnement débute par un échange préalable.<br>
+        &nbsp;Un temps simple pour vérifier que votre besoin et le cadre proposé sont justes.</p>
+        <p>Le coaching individuel est un espace de responsabilité.<br>
+        &nbsp;Un lieu où l'on peut penser autrement.<br>
+        &nbsp;Sans masque. Sans performance.</p>
+        <p>Avec exigence, lucidité et présence.</p>
       </div>
     </section>
 
-    <!-- CTA -->
+    <!-- CTA Coaching individuel -->
     <section class="section-spacing bg-cream-section">
       <div class="container-page text-center">
-        <h2 class="mb-4 heading-gold">Prêt à commencer ?</h2>
-        <p class="text-muted-foreground mb-10">Chaque parcours commence par un échange.</p>
-        <CtaButton :href="config.reservations.calendlyGeneral || '/contact'" arrow>
+        <h2 class="mb-4 heading-gold">Commencer</h2>
+        <p class="text-muted-foreground mb-10">Chaque parcours commence par une conversation.</p>
+        <CtaButton href="https://cal.com/anna-alcaide-villanueva-divan-des-sultanes/15min" arrow>
           Prendre rendez-vous
         </CtaButton>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- COACHING D'ÉQUIPE ET D'ORGANISATION -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <section id="equipe" class="section-spacing bg-warm-section">
+      <div class="container-page prose-divan max-w-3xl mx-auto">
+        <h2 class="heading-gold text-center">Coaching d'équipe et d'organisation</h2>
+
+        <p>Les organisations évoluent dans des environnements complexes.</p>
+        <p>Pression des résultats. Transformation permanente. Tensions intergénérationnelles. Exigence de performance et besoin d'humanité.</p>
+        <p>J'interviens auprès des entreprises et des équipes dirigeantes pour travailler la posture, la régulation des tensions et la qualité du leadership.</p>
+        <p>Mon approche est exigeante, structurée et profondément opérationnelle.</p>
+        <p><strong>Elle vise un objectif clair : renforcer la capacité des équipes à décider, coopérer et performer durablement.</strong></p>
+      </div>
+    </section>
+
+    <SectionDivider />
+
+    <!-- Leadership & posture managériale -->
+    <section class="section-spacing">
+      <div class="container-page prose-divan max-w-3xl mx-auto">
+        <h2>Leadership &amp; posture managériale</h2>
+        <ul>
+          <li>Développer l'intelligence émotionnelle des managers</li>
+          <li>Renforcer la qualité de la communication interpersonnelle</li>
+          <li>Réguler les tensions et prévenir l'escalade conflictuelle</li>
+          <li>Clarifier la posture d'autorité</li>
+          <li>Accompagner la prise de décision en contexte complexe</li>
+        </ul>
+        <p>Il ne s'agit pas d'ajouter des outils. <strong>Il s'agit de transformer la manière d'habiter la responsabilité.</strong></p>
+      </div>
+    </section>
+
+    <SectionDivider />
+
+    <!-- Accompagnement des équipes dirigeantes -->
+    <section class="section-spacing">
+      <div class="container-page prose-divan max-w-3xl mx-auto">
+        <h2>Accompagnement des équipes dirigeantes</h2>
+        <p>J'accompagne les CODIR et équipes stratégiques dans :</p>
+        <ul>
+          <li>les périodes de transformation,</li>
+          <li>les enjeux de cohésion,</li>
+          <li>les tensions relationnelles,</li>
+          <li>les repositionnements stratégiques.</li>
+        </ul>
+        <p>Le travail peut prendre la forme de :</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-8 not-prose">
+          <Card>
+            <CardHeader class="pb-2">
+              <CardTitle class="text-base">Séminaires structurés</CardTitle>
+            </CardHeader>
+          </Card>
+          <Card>
+            <CardHeader class="pb-2">
+              <CardTitle class="text-base">Accompagnements sur la durée</CardTitle>
+            </CardHeader>
+          </Card>
+          <Card>
+            <CardHeader class="pb-2">
+              <CardTitle class="text-base">Séquences ponctuelles d'intervention</CardTitle>
+            </CardHeader>
+          </Card>
+          <Card>
+            <CardHeader class="pb-2">
+              <CardTitle class="text-base">Conférences thématiques</CardTitle>
+            </CardHeader>
+          </Card>
+        </div>
+        <p>Chaque intervention est conçue sur mesure, en fonction des enjeux spécifiques de l'organisation.</p>
+      </div>
+    </section>
+
+    <!-- CTA Équipe -->
+    <section class="section-spacing bg-cream-section">
+      <div class="container-page text-center">
+        <h2 class="mb-4 heading-gold">Échanger sur votre situation</h2>
+        <p class="text-muted-foreground mb-4 max-w-lg mx-auto">Chaque mission débute par un échange préalable.</p>
+        <p class="text-muted-foreground mb-10 max-w-lg mx-auto text-sm">Ce temps permet de comprendre votre contexte, vos enjeux et d'explorer les modalités d'un accompagnement adapté.</p>
+        <CtaButton href="https://cal.com/anna-alcaide-villanueva-divan-des-sultanes/15min" arrow>
+          Prenons 15 minutes
+        </CtaButton>
+        <p class="text-xs text-muted-foreground mt-4 italic">Un premier échange de 15 minutes pour comprendre votre situation, cerner vos enjeux et voir si un accompagnement peut être pertinent.</p>
       </div>
     </section>
   </div>

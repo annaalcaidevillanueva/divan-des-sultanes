@@ -1,23 +1,54 @@
 <script setup lang="ts">
+import { ChevronDown } from 'lucide-vue-next'
+
 useSeoMeta({
-  title: 'Divan des Sultanes — Coaching de leadership au féminin',
-  ogTitle: 'Divan des Sultanes — Coaching de leadership au féminin',
-  description: 'Un espace vivant pour penser autrement sa manière de diriger, d\'habiter le pouvoir, de traverser les responsabilités.',
-  ogDescription: 'Un espace vivant pour penser autrement sa manière de diriger, d\'habiter le pouvoir, de traverser les responsabilités.',
+  title: 'Divan des Sultanes — coaching • consulting • facilitation',
+  ogTitle: 'Divan des Sultanes — coaching • consulting • facilitation',
+  description: 'Un espace pour penser autrement la responsabilité, le pouvoir et la manière de diriger.',
+  ogDescription: 'Un espace pour penser autrement la responsabilité, le pouvoir et la manière de diriger.',
   ogImage: '/img/1.jpg',
 })
+
+const testimonials = [
+  {
+    name: 'Thierry Marc',
+    role: 'DG — MEDEF Hérault Montpellier · Président Association Les Créateurs d\'Émotions Positives · Un peu artiste quand il est inspiré !',
+    linkedin: 'https://www.linkedin.com/in/thierry-marc-%F0%9F%8C%88-5838a117/',
+    title: 'Empathie, altruisme, générosité, professionnalisme, réalisme... sont des valeurs sûres qu\'elle incarne et qu\'elle partage avec ses clients.',
+    text: 'Anna Alcaide Villanueva a la grande première qualité de savoir écouter et de savoir comprendre. Les outils proposés ne sont pas choisis au hasard ! On n\'est pas dans du coaching abusif, ni envahissant... on est dans du coaching humain. La personnalisation ou le sur-mesure sont souvent exagérés, promis mais jamais réalité. Avec Anna, c\'est une réalité. J\'ai, personnellement, en peu de séances, avancé sur mes pratiques, progressé sur mon management... et puis j\'ai commencé à y voir un peu plus clair sur certains projets.\n\nIci, ça s\'appelle « rédiger une reco »... donc je la recommande fortement !\n\nEnfin, son parcours personnel inspire et conforte les conseils qu\'elle peut apporter.',
+  },
+  {
+    name: 'Marion André',
+    role: 'Chef de projet et responsable qualité expert chez Hermès',
+    linkedin: 'https://www.linkedin.com/in/marionandreingenieurprojets/',
+    title: 'Transmettant sa passion et des valeurs humaines essentielles, elle enseigne avec beaucoup de professionnalisme et de sincérité.',
+    text: 'L\'intervention d\'Anna lors d\'une formation en management a été d\'une grande qualité, grâce à ses qualités !\n\nElle sait viser juste pour toucher les stagiaires et faire passer les messages en marquant les esprits.\n\nMerci beaucoup Anna pour ton engagement et ta positivité contagieuse !',
+  },
+  {
+    name: 'Virginie Thiebaud',
+    role: 'Responsable régionale de service entreprises et coordinatrice des expertises d\'avenir chez France Travail Provence-Alpes-Côte d\'Azur',
+    linkedin: 'https://www.linkedin.com/in/virginie-thiebaud-01b04a1a1/',
+    title: 'Anna incarne avec brio le leadership positif, inspirant et motivant tous celles et ceux qui ont la chance de participer à ses sessions.',
+    text: 'J\'ai eu le privilège de participer à une formation dispensée par Anna, une formatrice extraordinaire dans le domaine du leadership positif. Anna possède un sens de l\'analyse exceptionnel, capable de révéler les vérités et les nuances du management sans fard ni artifices. Grâce à ses compétences et à son parcours atypique et riche, elle fait bouger les lignes et nous amène à une prise de conscience en nous sortant de notre zone de confort.\n\nSon intervention à l\'Université du Management a été un véritable coup de cœur. Anna incarne avec brio le leadership positif, inspirant et motivant tous celles et ceux qui ont la chance de participer à ses sessions. Son approche audacieuse et sa capacité à transmettre des concepts complexes de manière accessible sont simplement remarquables.\n\nJe recommande vivement Anna à toute organisation cherchant à développer un leadership positif et constructif au sein de ses équipes. Elle ne laisse pas indifférent et marque les esprits.',
+  },
+]
+
+const expandedTestimonial = ref<number | null>(null)
+
+function toggleTestimonial(index: number) {
+  expandedTestimonial.value = expandedTestimonial.value === index ? null : index
+}
 </script>
 
 <template>
   <div>
     <!-- Hero -->
     <HeroSection image="/img/1.jpg" image-alt="Vue inspirante — Divan des Sultanes">
-      <p class="text-gold-300 text-sm md:text-base font-semibold uppercase tracking-[0.25em] mb-5">Coaching de leadership au féminin</p>
-      <h1 class="text-white mb-6 hero-text-shadow">Le Divan des Sultanes</h1>
-      <p class="text-lg md:text-xl text-white/85 max-w-2xl mx-auto mb-10 leading-relaxed">
-        Un espace vivant pour penser autrement sa manière de diriger,
-        d'habiter le pouvoir, de traverser les responsabilités.
-      </p>
+      <p class="text-gold-300 text-sm md:text-base font-semibold uppercase tracking-[0.25em] mb-5">coaching • consulting • facilitation</p>
+      <h1 class="text-white mb-6 hero-text-shadow">Le Divan Des Sultanes</h1>
+      <div class="text-lg md:text-xl text-white/85 max-w-2xl mx-auto mb-10 leading-relaxed space-y-1">
+        Un espace pour prendre du recul, transformer sa manière d'incarner<br> le leadership et habiter pleinement sa vie.
+      </div>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <CtaButton to="/odyssee" arrow>
           Découvrir l'Odyssée
@@ -28,19 +59,21 @@ useSeoMeta({
       </div>
     </HeroSection>
 
-    <!-- Intro -->
-    <section class="section-spacing bg-warm-section">
-      <div class="container-page prose-divan max-w-3xl mx-auto text-center">
-        <h2 class="heading-gold">Le Divan des Sultanes est un espace vivant.</h2>
-        <p class="text-lg">Un lieu pour déposer ce qui pèse</p>
-        <p class="text-lg">et écouter ce qui cherche à se dire.</p>
-        <p class="text-lg">
-          Un lieu pour penser autrement sa manière de diriger,<br>
-          d'habiter le pouvoir,<br>
-          de traverser les responsabilités.
-        </p>
-        <p class="text-lg">Ici, on ne vient pas apprendre à faire plus.</p>
-        <p class="text-lg font-semibold text-foreground">On vient apprendre à être autrement.</p>
+    <!-- Split full-bleed: image gauche, texte droite -->
+    <section class="flex flex-col lg:flex-row min-h-[85vh]">
+      <!-- Image — collée au bord, aucun padding -->
+      <div class="relative lg:w-1/2 h-72 lg:h-auto">
+        <NuxtImg src="/img/4.jpg" alt="Le Divan des Sultanes — espace vivant" class="absolute inset-0 w-full h-full object-cover" loading="eager" sizes="(max-width: 1024px) 100vw, 50vw" width="960" height="1200" />
+      </div>
+      <!-- Texte -->
+      <div class="lg:w-1/2 flex items-center bg-cream-section px-10 py-16 lg:px-20 lg:py-28">
+        <div class="prose-divan max-w-lg">
+          <h2 class="heading-gold">Le Divan des Sultanes</h2>
+          <p>Un lieu où l'on peut déposer ce qui pèse<br>et accueillir ce qui cherche à émerger.</p>
+          <p>Un lieu pour penser autrement sa manière de diriger,<br>d'habiter le pouvoir,<br>de traverser les responsabilités.</p>
+          <p>Ici, on ne vient pas apprendre à faire plus.</p>
+          <p class="font-semibold">On vient apprendre à être autrement.</p>
+        </div>
       </div>
     </section>
 
@@ -48,115 +81,112 @@ useSeoMeta({
     <section class="section-spacing">
       <div class="container-page">
         <div class="mb-20">
-          <h2 class="text-center mb-4 heading-gold">Accompagnements individuels</h2>
-          <p class="text-center text-muted-foreground max-w-xl mx-auto mb-14">
-            Trois formes, une même intention : se déplacer, se confronter et se transformer.
+          <h2 class="text-center mb-4 heading-gold">Accompagnements</h2>
+          <p class="text-center text-muted-foreground max-w-2xl mx-auto mb-14">
+            Chaque accompagnement ouvre un espace différent. Une même intention : <br> se déplacer intérieurement pour diriger autrement.
           </p>
 
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <OfferingCard
-              titre="L'Odyssée"
-              description="Une traversée initiatique sur 9 mois. Un parcours collectif, exigeant, transformateur. Un déplacement intérieur durable."
-              to="/odyssee"
-            />
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <OfferingCard titre="L'Odyssée" description="Une traversée initiatique sur 9 mois. Un parcours collectif, exigeant, transformateur. Un déplacement intérieur durable." to="/odyssee" />
 
-            <OfferingCard
-              titre="L'Atelier des Sultanes"
-              description="Des espaces d'exploration : cercles, co-développement, expérimentations. Penser ensemble. Se confronter. Déplacer ses angles morts."
-              to="/atelier"
-            />
+            <OfferingCard titre="L'Atelier" description="Des espaces d'exploration : cercles, co-développement, expérimentations. Penser ensemble. Se confronter. Déplacer ses angles morts." to="/atelier" />
 
-            <OfferingCard
-              titre="Le Coaching individuel"
-              description="Un espace confidentiel pour traverser une tension, une décision, un seuil. Un travail précis sur la posture et la responsabilité."
-              to="/coaching"
-            />
-          </div>
-        </div>
+            <OfferingCard titre="Coaching individuel" description="Un espace confidentiel pour traverser une tension, une décision, un seuil. Un travail précis sur la posture et la responsabilité." to="/coaching" />
 
-        <!-- Entreprises -->
-        <div>
-          <h2 class="text-center mb-4 heading-gold">Entreprises & Organisations</h2>
-          <p class="text-center text-muted-foreground max-w-xl mx-auto mb-14">
-            Des accompagnements sur mesure pour transformer les pratiques de leadership.
-          </p>
-
-          <div class="max-w-2xl mx-auto">
-            <OfferingCard
-              titre="Entreprises & Organisations"
-              description="Des accompagnements sur mesure pour les équipes dirigeantes. Créer des environnements où exigence et humanité coexistent."
-              to="/entreprises"
-            />
+            <OfferingCard titre="Entreprises & Organisations" description="Des accompagnements sur mesure pour les équipes dirigeantes. Coaching d'équipe, séminaires et interventions en leadership." to="/coaching#equipe" />
           </div>
         </div>
       </div>
     </section>
 
-    <!-- À l'origine du Divan -->
+    <!-- Témoignages -->
     <section class="section-spacing bg-cream-section">
       <div class="container-page">
-        <h2 class="text-center mb-14 heading-gold">À l'origine du Divan</h2>
-        
+        <h2 class="text-center mb-14 heading-gold">Ils ont aimé le Divan des Sultanes</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+          <div v-for="(t, i) in testimonials" :key="i" class="text-center">
+            <!-- Circle photo placeholder -->
+            <a :href="t.linkedin" target="_blank" rel="noopener" class="block mx-auto mb-5">
+              <div class="w-28 h-28 mx-auto rounded-full bg-gradient-to-br from-gold-200 to-gold-400 flex items-center justify-center text-white text-3xl font-heading cursor-pointer hover:shadow-warm-lg transition-shadow duration-300">
+                {{t.name.split(' ').map((n: string) => n[0]).join('')}}
+              </div>
+            </a>
+
+            <h3 class="text-base mb-1">{{ t.name }}</h3>
+            <p class="text-xs text-muted-foreground mb-3">{{ t.role }}</p>
+
+            <!-- Title / short quote -->
+            <p class="text-sm italic text-muted-foreground mb-3 leading-relaxed">« {{ t.title }} »</p>
+
+            <!-- Expandable full text -->
+            <button class="inline-flex items-center gap-1 text-sm font-medium text-gold-700 hover:text-gold-900 transition-colors" @click="toggleTestimonial(i)">
+              {{ expandedTestimonial === i ? 'Réduire' : 'Lire le témoignage' }}
+              <ChevronDown class="h-4 w-4 transition-transform duration-300" :class="{ 'rotate-180': expandedTestimonial === i }" />
+            </button>
+
+            <Transition enter-active-class="transition-all duration-300 ease-out" enter-from-class="opacity-0 max-h-0" enter-to-class="opacity-100 max-h-[600px]" leave-active-class="transition-all duration-200 ease-in" leave-from-class="opacity-100 max-h-[600px]" leave-to-class="opacity-0 max-h-0">
+              <div v-if="expandedTestimonial === i" class="mt-4 text-left overflow-hidden">
+                <p v-for="(paragraph, pi) in t.text.split('\n\n')" :key="pi" class="text-sm text-muted-foreground leading-relaxed mb-2">
+                  {{ paragraph }}
+                </p>
+                <a :href="t.linkedin" target="_blank" rel="noopener" class="inline-block mt-2 text-xs font-medium text-gold-700 hover:underline">
+                  Voir le profil LinkedIn →
+                </a>
+              </div>
+            </Transition>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- La femme derrière le divan -->
+    <section class="section-spacing ">
+      <div class="container-page">
+        <h2 class="text-center mb-14 heading-gold">La femme derrière le divan</h2>
+
         <div class="grid grid-cols-1 lg:grid-cols-5 gap-14 items-start">
           <!-- Portrait -->
           <div class="lg:col-span-2">
-            <NuxtImg
-              src="/img/2.jpg"
-              alt="Anna Alcaide Villanueva — Fondatrice du Divan des Sultanes"
-              class="rounded-2xl w-full object-cover aspect-[3/4] shadow-warm-lg"
-              loading="lazy"
-              sizes="(max-width: 1024px) 100vw, 50vw"
-            />
+            <NuxtImg src="/img/2.jpg" alt="Anna Alcaide Villanueva — Fondatrice du Divan des Sultanes" class="rounded-2xl w-full object-cover aspect-[3/4] shadow-warm-lg" loading="lazy" sizes="(max-width: 1024px) 100vw, 50vw" width="600" height="800" />
           </div>
 
           <!-- Bio -->
-          <div class="lg:col-span-3 prose-divan">
-            <p class="text-lg font-semibold text-foreground">Je suis Anna Alcaide Villanueva.</p>
-            <p>J'ai longtemps travaillé dans l'hôtellerie haut de gamme.</p>
-            <p>J'ai été cheffe de cuisine. Puis directrice de restauration. Puis professeur en lycée gastronomique.</p>
-            <p>J'ai connu la pression du service. L'exigence absolue. La responsabilité qui ne se délègue pas. La maîtrise comme condition de survie.</p>
-            <p><strong>Je sais ce que c'est que tenir.</strong></p>
-            <p>Puis un déplacement s'est opéré. Un travail intérieur. Un changement de posture.</p>
-            <p>Je suis aujourd'hui coach professionnelle certifiée, Coach & Team®.</p>
-            <p>Depuis plus de dix ans, j'accompagne des dirigeants et des managers dans les zones où le leadership devient exigeant : pouvoir, contrôle, solitude, responsabilité.</p>
-            <p>Je ne parle pas d'un endroit théorique. <strong>Je parle d'un endroit traversé.</strong></p>
-            <p>Aujourd'hui, j'aide les femmes et les dirigeants à habiter leur responsabilité autrement. À ne plus confondre puissance et dureté. À transformer leur manière de diriger, sans perdre leur exigence.</p>
-            <p>Le Divan est né de cette trajectoire.</p>
+          <div class="lg:col-span-3 prose-divan text-justify">
+            <p class="text-lg font-medium text-muted-foreground">Fondatrice du Divan des Sultanes</p>
+            <p>
+              Coach professionnelle certifiée (Coach & Team®), Anna Alcaide Villanueva accompagne depuis plus de dix ans les dirigeants et les managers face aux défis complexes du leadership : le pouvoir, le contrôle, la solitude et la responsabilité.
+            </p>
+            <p>
+              Son approche ne relève pas de la théorie, mais de l'expérience vécue. Ancienne cheffe de cuisine et directrice de restauration dans l'hôtellerie haut de gamme, elle connaît intimement la pression des milieux ultra-exigeants et la nécessité d'une maîtrise absolue pour tenir le cap.
+            </p>
+            <p>
+              À la suite d'un profond changement de posture intérieure, elle a fondé Le Divan des Sultanes. Sa mission aujourd'hui : aider les femmes et les leaders à habiter leur rôle autrement. Elle les guide pour cesser de confondre puissance et dureté, et pour transformer leur manière de diriger sans jamais renoncer à leur niveau d'exigence.
+            </p>
 
-            <div class="mt-10 flex flex-wrap gap-2.5">
-              <Badge variant="secondary" class="border border-gold-200/50 bg-warm-50">Coach & Team®</Badge>
-              <Badge variant="secondary" class="border border-gold-200/50 bg-warm-50">Élément Humain (Will Schutz)</Badge>
-              <Badge variant="secondary" class="border border-gold-200/50 bg-warm-50">Co-développement</Badge>
-              <Badge variant="secondary" class="border border-gold-200/50 bg-warm-50">Intelligence émotionnelle</Badge>
-            </div>
+
+            <p class="signature text-3xl md:text-5xl mt-8">Anna</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CTA Banner -->
+    <!-- Le Seuil — CTA Banner -->
     <section class="relative overflow-hidden">
-      <NuxtImg
-        src="/img/3.jpg"
-        alt="Rejoindre le Divan des Sultanes"
-        class="absolute inset-0 w-full h-full object-cover"
-        loading="lazy"
-        sizes="100vw"
-      />
+      <NuxtImg src="/img/3.jpg" alt="Rejoindre le Divan des Sultanes" class="absolute inset-0 w-full h-full object-cover" loading="lazy" sizes="100vw" width="1920" height="1080" />
       <div class="absolute inset-0 bg-gradient-to-r from-emerald-950/80 via-emerald-900/60 to-emerald-950/50" />
       <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/20" />
       <div class="relative z-10 container-page py-24 md:py-32 text-center">
-        <p class="text-gold-300 text-sm font-semibold uppercase tracking-[0.25em] mb-4">Le premier pas</p>
-        <h2 class="text-white mb-5 text-3xl md:text-4xl">Prête à vous déplacer ?</h2>
-        <p class="text-white/75 text-lg max-w-xl mx-auto mb-10 leading-relaxed">
-          Le Divan est un lieu de rencontre. Un premier échange peut tout changer.
+        <h3 class="!text-gold-300 text-base font-semibold uppercase tracking-[0.25em] mb-4">Le seuil</h3>
+        <p class="text-white/85 text-lg max-w-2xl mx-auto mb-4 leading-relaxed">
+          Une transformation commence souvent par une conversation.
         </p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <CtaButton to="/odyssee" arrow>
-            L'Odyssée
+        <div class="flex flex-col sm:flex-row gap-4 justify-center mt-10">
+          <CtaButton href="https://cal.com/anna-alcaide-villanueva-divan-des-sultanes/15min" arrow>
+            Réserver un échange de 15 minutes
           </CtaButton>
-          <CtaButton to="/contact" variant="secondary">
-            Entrer en contact
+          <CtaButton to="/coaching" variant="secondary">
+            Découvrir les accompagnements
           </CtaButton>
         </div>
       </div>

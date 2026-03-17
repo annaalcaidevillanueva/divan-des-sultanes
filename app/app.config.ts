@@ -2,7 +2,7 @@ export default defineAppConfig({
   site: {
     nom: "Divan des Sultanes",
     description:
-      "Coaching de leadership au féminin — Accompagnement de dirigeantes, managers et femmes en responsabilité.",
+      "Un espace pour penser autrement la responsabilité, le pouvoir et la manière de diriger. coaching • consulting • facilitation.",
     langue: "fr",
     url: "https://diandessultanes.com",
   },
@@ -12,15 +12,11 @@ export default defineAppConfig({
     whatsappLien: "https://wa.me/212721040516",
     emailContact: "contact@divandessultanes.com",
   },
-
-  formulaires: {
-    tallyContactId: "", // ID du formulaire Tally — page Contact
-    tallyEssaiId: "", // ID du formulaire email — essai "De l'autre côté du contrôle"
-  },
-
   reservations: {
-    calendlyDiscernement: "", // Lien Calendly — RDV de discernement (Odyssée)
-    calendlyGeneral: "", // Lien Calendly — RDV général
+    calendlyDiscernement:
+      "https://cal.com/anna-alcaide-villanueva-divan-des-sultanes/30min",
+    calendlyGeneral:
+      "https://cal.com/anna-alcaide-villanueva-divan-des-sultanes/15min",
   },
 
   reseaux: {
