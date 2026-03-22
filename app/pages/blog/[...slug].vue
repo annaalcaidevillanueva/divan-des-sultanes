@@ -28,7 +28,7 @@ useSeoMeta({
         :alt="post.title"
         class="w-full h-full object-cover"
         loading="eager"
-        sizes="100vw"
+        sizes="xs:100vw sm:100vw md:100vw lg:100vw xl:1920px"
         width="1920"
         height="823"
       />

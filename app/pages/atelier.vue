@@ -22,14 +22,19 @@ useSeoMeta({
     </HeroSection>
 
     <!-- Introduction -->
-    <section class="section-spacing">
+    <section class="section-spacing bg-white">
       <div class="container-page prose-divan max-w-3xl mx-auto">
         <h2>L'Atelier</h2>
         <p>L'Atelier est un espace autonome.</p>
         <p>Un lieu de rencontres régulières entre femmes en responsabilité.</p>
         <p>Un espace, pour l'instant principalement virtuel, qui pourra aussi se vivre en présentiel.</p>
-        <p>Ici, on travaille à partir du réel. Des situations concrètes. Des décisions à prendre. Des tensions managériales. Des questions de posture.</p>
-        <p>L'Atelier n'est pas une traversée longue comme l'Odyssée. C'est un espace plus court, plus ciblé, plus opérationnel.</p>
+        <p>Ici, on travaille à partir du réel.<br>
+        Des situations concrètes.<br>
+        Des décisions à prendre.<br>
+        Des tensions managériales.<br>
+        Des questions de posture.</p>
+        <p>L'Atelier n'est pas une traversée longue comme l'Odyssée.<br>
+        C'est un espace plus court, plus ciblé, plus opérationnel.</p>
         <p>Un lieu pour réfléchir autrement, agir avec plus de discernement, et ne plus rester seule face à certaines situations professionnelles.</p>
         <p>Les rencontres sont réservées aux femmes francophones en responsabilité : dirigeantes, managers, responsables d'équipe, cheffes de projet.</p>
       </div>
@@ -37,17 +42,17 @@ useSeoMeta({
 
     <SectionDivider />
 
-    <!-- Le cadre du cycle -->
-    <section class="section-spacing">
+    <!-- Le cadre -->
+    <section class="section-spacing bg-[#F8F5F0]">
       <div class="container-page prose-divan max-w-3xl mx-auto">
-        <h2>Le cadre du cycle</h2>
-        <p>L'Atelier se vit sous forme de cycle.</p>
-        <p>Chaque cycle s'étend sur <strong>quatre mois</strong> et permet de participer à <strong>six ateliers de deux heures</strong>, réunissant un groupe restreint afin de permettre un travail en profondeur et des échanges de qualité.</p>
+        <h2>Le cadre</h2>
+        <p>Les ateliers peuvent se vivre de manière ponctuelle ou s'inscrire dans une continuité.</p>
+        <p>Chaque atelier dure deux heures et réunit un groupe restreint afin de permettre un travail en profondeur et des échanges de qualité.</p>
 
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 my-8 not-prose">
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 my-8 not-prose">
           <Card class="text-center">
             <CardHeader class="pb-2">
-              <CardTitle class="text-4xl font-mono text-primary">6</CardTitle>
+              <CardTitle class="text-4xl font-mono text-primary">8</CardTitle>
             </CardHeader>
             <CardContent>
               <p class="text-sm text-muted-foreground">femmes maximum</p>
@@ -55,18 +60,10 @@ useSeoMeta({
           </Card>
           <Card class="text-center">
             <CardHeader class="pb-2">
-              <CardTitle class="text-4xl font-mono text-primary">6</CardTitle>
+              <CardTitle class="text-4xl font-mono text-primary">2h</CardTitle>
             </CardHeader>
             <CardContent>
-              <p class="text-sm text-muted-foreground">ateliers de 2h</p>
-            </CardContent>
-          </Card>
-          <Card class="text-center">
-            <CardHeader class="pb-2">
-              <CardTitle class="text-4xl font-mono text-primary">4</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p class="text-sm text-muted-foreground">mois de cycle</p>
+              <p class="text-sm text-muted-foreground">par atelier</p>
             </CardContent>
           </Card>
           <Card class="text-center">
@@ -79,29 +76,53 @@ useSeoMeta({
           </Card>
         </div>
 
-        <p>Plusieurs formats d'ateliers sont proposés au cours du cycle.</p>
+        <p>Plusieurs formats d'ateliers sont proposés.</p>
         <p>Les participantes peuvent <strong>s'inscrire sur les listes d'attente des ateliers qui les intéressent</strong>.<br>
-        Chaque atelier démarre dès que <strong>six participantes</strong> sont réunies.</p>
-        <p>Cette organisation permet à chacune de composer son parcours tout en préservant <strong>la qualité du travail collectif</strong>.</p>
-        <p>La confiance ne naît pas d'une rencontre isolée.<br>
-        Elle se tisse au fil des rencontres.</p>
+        Chaque atelier démarre dès que <strong>huit participantes</strong> sont réunies.</p>
+        <p>Cette organisation permet à chacune de venir travailler une situation précise, au moment juste pour elle, tout en préservant la qualité du travail collectif.</p>
+      </div>
+    </section>
+
+    <SectionDivider />
+
+    <!-- S'inscrire dans un cycle -->
+    <section class="section-spacing bg-white">
+      <div class="container-page prose-divan max-w-3xl mx-auto">
+        <h2>S'inscrire dans un cycle</h2>
+        <p>Certaines choisissent de participer à un atelier ponctuellement.<br>
+        D'autres ressentent le besoin de revenir, de prolonger, d'approfondir.</p>
+        <p>Dans ce cas, il est possible de s'inscrire dans un cycle.</p>
+        <p>Un cycle s'étend sur <strong>quatre mois</strong> et permet de participer à <strong>six ateliers</strong>.<br>
+        Il offre un cadre régulier, une continuité dans le travail, et une qualité de lien qui se construit dans le temps.</p>
+        <p><em>Le cycle n'est pas une obligation, mais il est fortement encouragé (la confiance du collectif se renforce et la magie opère à chaque fois).</em></p>
       </div>
     </section>
 
     <SectionDivider />
 
     <!-- Les formats proposés -->
-    <section class="section-spacing">
+    <section class="section-spacing bg-[#F8F5F0]">
       <div class="container-page max-w-3xl mx-auto">
         <h2 class="mb-8">Les formats proposés au sein de l'Atelier</h2>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
           <Card>
             <CardHeader>
               <CardTitle class="text-lg">Le co-développement professionnel</CardTitle>
             </CardHeader>
             <CardContent>
-              <p class="text-sm text-muted-foreground">Méthode structurée créée par Adrien Payette et Claude Champagne. Un petit groupe de pairs travaille, à tour de rôle, sur les situations professionnelles de chacune. Prise de recul, élargissement du regard, identification des angles morts, pistes d'action concrètes.</p>
+              <p class="text-sm text-muted-foreground leading-relaxed">Méthode structurée créée par Adrien Payette et Claude Champagne.</p>
+              <p class="text-sm text-muted-foreground leading-relaxed mt-2">Un petit groupe de pairs travaille, à tour de rôle, sur les situations professionnelles apportées par chacune.</p>
+              <p class="text-sm text-muted-foreground leading-relaxed mt-2">Ce n'est ni du conseil spontané, ni du partage informel. C'est un processus structuré, en plusieurs étapes, qui permet :</p>
+              <ul class="text-sm text-muted-foreground leading-relaxed mt-2 space-y-1 list-none pl-0">
+                <li>– de prendre du recul,</li>
+                <li>– d'élargir son regard,</li>
+                <li>– d'identifier des angles morts,</li>
+                <li>– de faire émerger des pistes d'action concrètes.</li>
+              </ul>
+              <p class="text-sm text-muted-foreground leading-relaxed mt-2">La richesse vient de l'intelligence collective. La profondeur vient du cadre.</p>
+              <p class="text-sm text-muted-foreground leading-relaxed mt-2">Je tiens le processus. Je régule les échanges. Je veille à la qualité de présence.</p>
+              <p class="text-sm text-muted-foreground leading-relaxed mt-2">Le travail reste ancré dans la sphère professionnelle, tout en permettant un déplacement de posture.</p>
             </CardContent>
           </Card>
 
@@ -110,7 +131,9 @@ useSeoMeta({
               <CardTitle class="text-lg">Le Cercle de Résonance</CardTitle>
             </CardHeader>
             <CardContent>
-              <p class="text-sm text-muted-foreground">Travailler sa posture par le miroir du groupe. Plutôt que de chercher une solution technique, nous explorons ce qu'une situation de tension fait vibrer en vous. Le groupe témoigne de ce qu'il perçoit : une image, une émotion, un ressenti. Un format puissant pour lever les angles morts et retrouver sa juste présence intérieure.</p>
+              <p class="text-sm text-muted-foreground leading-relaxed">Travailler sa posture par le miroir du groupe.</p>
+              <p class="text-sm text-muted-foreground leading-relaxed mt-2">Plutôt que de chercher une solution technique, nous explorons ce qu'une situation de tension fait vibrer en vous. Le groupe témoigne de ce qu'il perçoit : une image, une émotion, un ressenti.</p>
+              <p class="text-sm text-muted-foreground leading-relaxed mt-2">Un format puissant pour lever les angles morts et retrouver sa juste présence intérieure.</p>
             </CardContent>
           </Card>
 
@@ -119,7 +142,9 @@ useSeoMeta({
               <CardTitle class="text-lg">La Lecture de Posture</CardTitle>
             </CardHeader>
             <CardContent>
-              <p class="text-sm text-muted-foreground">Décoder les jeux d'influence et de pouvoir. À partir de cas réels — un échange difficile, une réunion sous tension, une décision en suspens — nous décortiquons ensemble les dynamiques à l'œuvre. L'objectif est d'ajuster votre curseur entre fermeté et accueil pour habiter pleinement votre fonction sans vous épuiser.</p>
+              <p class="text-sm text-muted-foreground leading-relaxed">Décoder les jeux d'influence et de pouvoir.</p>
+              <p class="text-sm text-muted-foreground leading-relaxed mt-2">À partir de cas réels — un échange difficile, une réunion sous tension, une décision en suspens — nous décortiquons ensemble les dynamiques à l'œuvre.</p>
+              <p class="text-sm text-muted-foreground leading-relaxed mt-2">L'objectif est d'ajuster votre curseur entre fermeté et accueil pour habiter pleinement votre fonction sans vous épuiser.</p>
             </CardContent>
           </Card>
 
@@ -128,7 +153,9 @@ useSeoMeta({
               <CardTitle class="text-lg">Conversations de Seuil</CardTitle>
             </CardHeader>
             <CardContent>
-              <p class="text-sm text-muted-foreground">Prendre de la hauteur sur les paradoxes du leadership. Une exploration thématique guidée autour des grands enjeux de la responsabilité (L'audace de la lenteur, Sortir du contrôle, Habiter sa solitude). Un temps de réflexion profonde, presque philosophique mais ancré dans le réel, pour réaligner vos actions avec vos valeurs essentielles.</p>
+              <p class="text-sm text-muted-foreground leading-relaxed">Prendre de la hauteur sur les paradoxes du leadership.</p>
+              <p class="text-sm text-muted-foreground leading-relaxed mt-2">Une exploration thématique guidée autour des grands enjeux de la responsabilité (L'audace de la lenteur, Sortir du contrôle, Habiter sa solitude).</p>
+              <p class="text-sm text-muted-foreground leading-relaxed mt-2">Un temps de réflexion profonde, presque philosophique mais ancré dans le réel, pour réaligner vos actions avec vos valeurs essentielles.</p>
             </CardContent>
           </Card>
 
@@ -137,51 +164,45 @@ useSeoMeta({
               <CardTitle class="text-lg">Vision &amp; Intuition (Le Regard des Vigies)</CardTitle>
             </CardHeader>
             <CardContent>
-              <p class="text-sm text-muted-foreground">L'audit sensible de vos projets de dirigeante. Dans le tumulte de l'action, on perd parfois le fil de son intuition. Cet atelier permet de soumettre une vision ou un projet stratégique au regard de vos pairs. Les autres participantes agissent comme des vigies : elles signalent les zones d'ombre, les potentiels inexploités ou les pertes d'énergie qu'elles perçoivent. Un outil d'aide à la décision pour valider ou ajuster votre trajectoire.</p>
+              <p class="text-sm text-muted-foreground leading-relaxed">L'audit sensible de vos projets de dirigeante.</p>
+              <p class="text-sm text-muted-foreground leading-relaxed mt-2">Dans le tumulte de l'action, on perd parfois le fil de son intuition. Cet atelier permet de soumettre une vision ou un projet stratégique au regard de vos pairs.</p>
+              <p class="text-sm text-muted-foreground leading-relaxed mt-2">Les autres participantes agissent comme des vigies : elles signalent les zones d'ombre, les potentiels inexploités ou les pertes d'énergie qu'elles perçoivent. Un outil d'aide à la décision pour valider ou ajuster votre trajectoire.</p>
             </CardContent>
           </Card>
         </div>
 
-        <p class="text-muted-foreground mt-8">Chaque format conserve le même principe : un cadre clair, une exigence professionnelle, une qualité d'écoute.</p>
-      </div>
-    </section>
-
-    <SectionDivider />
-
-    <!-- Co-développement en détail -->
-    <section class="section-spacing">
-      <div class="container-page prose-divan max-w-3xl mx-auto">
-        <h2>Le co-développement professionnel</h2>
-        <p>L'Atelier s'appuie principalement sur le co-développement, méthode créée par Adrien Payette et Claude Champagne. Le principe est simple : un petit groupe de pairs se réunit régulièrement pour travailler, à tour de rôle, sur les situations professionnelles apportées par chacune. Ce n'est ni du conseil spontané, ni du partage informel. C'est un processus structuré, en plusieurs étapes, qui permet :</p>
-        <ul>
-          <li>de prendre du recul,</li>
-          <li>d'élargir son regard,</li>
-          <li>d'identifier des angles morts,</li>
-          <li>de repartir avec des pistes d'action concrètes.</li>
-        </ul>
-        <p>La richesse vient de l'intelligence collective. La profondeur vient du cadre. Je tiens le processus. Je régule les échanges. Je veille à la qualité de présence. Le travail reste ancré dans la sphère professionnelle.</p>
+        <p class="text-muted-foreground mt-8 leading-relaxed">Chaque format conserve le même principe : un cadre clair, une exigence professionnelle, une qualité d'écoute.</p>
       </div>
     </section>
 
     <SectionDivider />
 
     <!-- Investissement -->
-    <section class="section-spacing">
-      <div class="container-page max-w-xl mx-auto">
-        <h2 class="text-center mb-8 heading-gold">L'investissement</h2>
+    <section class="section-spacing bg-white">
+      <div class="container-page max-w-2xl mx-auto">
+        <h2 class="text-center mb-10 heading-gold">L'investissement</h2>
 
-        <PricingBlock prix="750 €" details="Cycle de 4 mois">
-          <ul class="text-sm text-muted-foreground text-left space-y-2 mb-6">
-            <li>Participation possible à 6 ateliers de 2 heures</li>
-            <li>Groupe limité à 6 participantes par atelier</li>
-            <li>Paiement possible en deux fois</li>
-          </ul>
-        </PricingBlock>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+          <PricingBlock prix="150 €">
+            <p class="text-sm text-muted-foreground text-left font-medium mb-1">Participation à un atelier de 2 heures</p>
+            <p class="text-sm text-muted-foreground text-left">Groupe limité à 8 participantes</p>
+          </PricingBlock>
+
+          <PricingBlock prix="750 €" details="Cycle de 4 mois">
+            <ul class="text-sm text-muted-foreground text-left space-y-1">
+              <li>Participation à 6 ateliers</li>
+              <li class="italic">(soit 125 € par atelier)</li>
+              <li>Paiement possible en deux fois</li>
+            </ul>
+          </PricingBlock>
+        </div>
+
+        <div class="text-center text-sm text-muted-foreground my-4 font-medium tracking-wide">— ou —</div>
 
         <div class="mt-8 prose-divan text-center">
           <p>L'Atelier est un espace d'exploration.</p>
-          <p>Certaines y viennent pour traverser une période précise.<br>
-          D'autres y trouvent un ancrage régulier dans leur posture professionnelle.</p>
+          <p>Certaines y viennent pour traverser une situation précise.<br>
+          D'autres choisissent d'inscrire leur réflexion dans la durée.</p>
         </div>
 
         <div class="mt-10 text-center">

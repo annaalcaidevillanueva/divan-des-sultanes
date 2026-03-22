@@ -74,7 +74,7 @@ useSeoMeta({
 
         <SectionDivider />
 
-        <h3>Les immersions au Maroc (Sidi Kaouki)</h3>
+        <h3>Les temps au Maroc</h3>
 
         <h3 class="!mt-8">L'envol</h3>
         <p>3 jours pour créer l'alliance et la sécurité relationnelle. Le rythme organique du Maroc, entre vent et lumière, permet de déposer les armures et de poser l'énergie des neuf mois à venir.</p>
@@ -86,15 +86,37 @@ useSeoMeta({
 
     <SectionDivider />
 
+    <!-- Galerie Maroc -->
+    <section class="section-spacing bg-[#F8F5F0]">
+      <div class="container-page">
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
+          <div v-for="n in 5" :key="n" class="aspect-square overflow-hidden rounded-xl">
+            <NuxtImg
+              :src="`/img/Odyssee_${n}.jpg`"
+              :alt="`Immersion au Maroc ${n}`"
+              class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+              sizes="xs:50vw sm:50vw md:33vw lg:20vw"
+              width="600"
+              height="600"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Ce qui se transforme -->
     <section class="section-spacing">
       <div class="container-page prose-divan max-w-3xl mx-auto">
         <h2>Ce qui se transforme</h2>
         <p>L'Odyssée travaille à un niveau que l'on nomme rarement.</p>
-        <p>La relation au contrôle. La manière d'habiter le pouvoir. La posture face à la tension. La capacité à réguler plutôt qu'à maîtriser.</p>
+        <p>La relation au contrôle. La manière d'habiter le pouvoir.</p>
+        <p>La posture face à la tension.</p>
+        <p>La capacité à réguler plutôt qu'à maîtriser.</p>
         <p><strong>Il ne s'agit pas d'apprendre plus. Il s'agit d'être autrement.</strong></p>
-        <p>Après le parcours, un système de mentorat et de parrainage prolonge le lien.</p>
-        <p>Créant un réseau vivant de femmes ayant traversé un même espace.</p>
+        <p>Le lien se prolonge et se transmet :<br>
+        Les Sultanes d'une lignée deviennent les mentors de la suivante.<br>
+        Ainsi, une lignée vivante prend forme.</p>
       </div>
     </section>
 
@@ -107,14 +129,16 @@ useSeoMeta({
         <p class="text-center text-muted-foreground mb-8">L'Odyssée représente un engagement conscient sur neuf mois.</p>
 
         <PricingBlock prix="8 000 €">
-          <p class="text-sm text-muted-foreground text-left mb-4">Ce qui est inclus :</p>
+          <p class="text-sm text-muted-foreground text-left mb-4">Un chemin d'accompagnement sur 9 mois, rythmé par :</p>
           <ul class="text-sm text-muted-foreground text-left space-y-2 mb-6">
-            <li>L'ensemble des ateliers collectifs et le cadre sur 9 mois.</li>
-            <li>Les 5 séances de coaching individuel.</li>
-            <li>Les deux immersions à Sidi Kaouki (hébergement de standing et pension complète).</li>
-            <li>Les transferts depuis l'aéroport d'Essaouira.</li>
+            <li>– deux demi-journées d'ateliers collectifs en distanciel tous les quinze jours.</li>
+            <li>– 5 séances de coaching individuel, pour approfondir ce qui se joue pour chacune.</li>
+            <li>– 2 immersions au Maroc, en pension complète, dans un lieu choisi pour sa qualité et son atmosphère.</li>
+            <li>– 2 temps de retour d'expérience en visio (à 3 mois et à 6 mois), sous forme de demi-journées.</li>
+            <li>– Un(e) mentor(e) dédié(e), issu(e) d'une lignée précédente, pour accompagner le chemin dans la durée.</li>
+            <li>– Les transferts depuis et vers les aéroports d'Essaouira, Marrakech ou Agadir.</li>
           </ul>
-          <p class="text-xs text-muted-foreground italic">Note : Les vols ne sont pas inclus. Un échelonnement de paiement est possible.</p>
+          <p class="text-xs text-muted-foreground italic">Note : Les vols ne sont pas inclus.</p>
         </PricingBlock>
       </div>
     </section>
@@ -124,9 +148,10 @@ useSeoMeta({
     <!-- L'entrée dans l'Odyssée -->
     <section class="section-spacing">
       <div class="container-page prose-divan max-w-3xl mx-auto text-center">
-        <h2 class="heading-gold">L'entrée dans l'Odyssée : Le Discernement</h2>
+        <h2 class="heading-gold">Entrer dans l'Odyssée — un discernement</h2>
         <p>On n'entre pas dans l'Odyssée par curiosité, mais par discernement.</p>
-        <p>Un rendez-vous préalable est nécessaire pour vérifier que le moment est juste pour vous et que l'alchimie du groupe sera préservée.</p>
+        <p>Un rendez-vous préalable permet de vérifier que le moment est juste pour vous,<br>
+        et que l'alchimie du groupe pourra être préservée.</p>
 
         <div class="mt-10">
           <CtaButton href="https://cal.com/anna-alcaide-villanueva-divan-des-sultanes/30min" arrow>

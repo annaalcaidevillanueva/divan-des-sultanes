@@ -14,25 +14,25 @@ withDefaults(
     <NuxtImg
       :src="image"
       :alt="imageAlt || ''"
-      class="absolute inset-0 w-full h-full object-cover scale-105"
+      class="absolute inset-0 w-full h-full object-cover scale-105 z-0"
       loading="eager"
-      sizes="100vw"
+      sizes="xs:100vw sm:100vw md:100vw lg:100vw xl:1920px"
       width="1920"
       height="1080"
     />
     <!-- Multi-layer overlay for depth and warmth -->
     <div
       v-if="overlay !== false"
-      class="absolute inset-0 bg-gradient-to-t from-emerald-950/80 via-emerald-900/40 to-emerald-950/10"
+      class="absolute inset-0 z-[1] bg-gradient-to-t from-stone-950/70 via-stone-900/30 to-transparent"
     />
     <div
       v-if="overlay !== false"
-      class="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-black/20"
+      class="absolute inset-0 z-[1] bg-gradient-to-r from-black/25 via-transparent to-black/15"
     />
     <!-- Subtle gold vignette at bottom -->
     <div
       v-if="overlay !== false"
-      class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-gold-900/10 to-transparent"
+      class="absolute bottom-0 left-0 right-0 z-[1] h-32 bg-gradient-to-t from-black/20 to-transparent"
     />
     <div class="relative z-10 container-page text-center text-white py-24 md:py-32">
       <slot />

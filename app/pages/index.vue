@@ -12,6 +12,7 @@ useSeoMeta({
 const testimonials = [
   {
     name: 'Thierry Marc',
+    photo: '/img/Reco_Thierry.jpg',
     role: 'DG — MEDEF Hérault Montpellier · Président Association Les Créateurs d\'Émotions Positives · Un peu artiste quand il est inspiré !',
     linkedin: 'https://www.linkedin.com/in/thierry-marc-%F0%9F%8C%88-5838a117/',
     title: 'Empathie, altruisme, générosité, professionnalisme, réalisme... sont des valeurs sûres qu\'elle incarne et qu\'elle partage avec ses clients.',
@@ -19,6 +20,7 @@ const testimonials = [
   },
   {
     name: 'Marion André',
+    photo: '/img/Reco_marion.jpg',
     role: 'Chef de projet et responsable qualité expert chez Hermès',
     linkedin: 'https://www.linkedin.com/in/marionandreingenieurprojets/',
     title: 'Transmettant sa passion et des valeurs humaines essentielles, elle enseigne avec beaucoup de professionnalisme et de sincérité.',
@@ -26,6 +28,7 @@ const testimonials = [
   },
   {
     name: 'Virginie Thiebaud',
+    photo: '/img/Reco_virginie.jpg',
     role: 'Responsable régionale de service entreprises et coordinatrice des expertises d\'avenir chez France Travail Provence-Alpes-Côte d\'Azur',
     linkedin: 'https://www.linkedin.com/in/virginie-thiebaud-01b04a1a1/',
     title: 'Anna incarne avec brio le leadership positif, inspirant et motivant tous celles et ceux qui ont la chance de participer à ses sessions.',
@@ -60,10 +63,10 @@ function toggleTestimonial(index: number) {
     </HeroSection>
 
     <!-- Split full-bleed: image gauche, texte droite -->
-    <section class="flex flex-col lg:flex-row min-h-[85vh]">
+    <section class="flex flex-col lg:flex-row min-h-[85vh] bg-white">
       <!-- Image — collée au bord, aucun padding -->
-      <div class="relative lg:w-1/2 h-72 lg:h-auto">
-        <NuxtImg src="/img/4.jpg" alt="Le Divan des Sultanes — espace vivant" class="absolute inset-0 w-full h-full object-cover" loading="eager" sizes="(max-width: 1024px) 100vw, 50vw" width="960" height="1200" />
+      <div class="relative lg:w-1/2 h-72 lg:h-auto overflow-hidden">
+        <NuxtImg src="/img/4.jpg" alt="Le Divan des Sultanes — espace vivant" class="absolute inset-0 w-full h-full object-cover" loading="eager" sizes="xs:100vw sm:100vw md:100vw lg:50vw" width="960" height="1200" />
       </div>
       <!-- Texte -->
       <div class="lg:w-1/2 flex items-center bg-cream-section px-10 py-16 lg:px-20 lg:py-28">
@@ -78,7 +81,7 @@ function toggleTestimonial(index: number) {
     </section>
 
     <!-- Accompagnements -->
-    <section class="section-spacing">
+    <section class="section-spacing bg-[#F8F5F0]">
       <div class="container-page">
         <div class="mb-20">
           <h2 class="text-center mb-4 heading-gold">Accompagnements</h2>
@@ -102,14 +105,14 @@ function toggleTestimonial(index: number) {
     <!-- Témoignages -->
     <section class="section-spacing bg-cream-section">
       <div class="container-page">
-        <h2 class="text-center mb-14 heading-gold">Ils ont aimé le Divan des Sultanes</h2>
+        <h2 class="text-center mb-14 heading-gold">Ils aiment le Divan des Sultanes</h2>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
           <div v-for="(t, i) in testimonials" :key="i" class="text-center">
-            <!-- Circle photo placeholder -->
+            <!-- Circle photo -->
             <a :href="t.linkedin" target="_blank" rel="noopener" class="block mx-auto mb-5">
-              <div class="w-28 h-28 mx-auto rounded-full bg-gradient-to-br from-gold-200 to-gold-400 flex items-center justify-center text-white text-3xl font-heading cursor-pointer hover:shadow-warm-lg transition-shadow duration-300">
-                {{t.name.split(' ').map((n: string) => n[0]).join('')}}
+              <div class="w-28 h-28 mx-auto rounded-full overflow-hidden shadow-warm-lg hover:shadow-warm-xl transition-shadow duration-300">
+                <NuxtImg :src="t.photo" :alt="t.name" class="w-full h-full object-cover" loading="lazy" width="112" height="112" />
               </div>
             </a>
 
@@ -141,21 +144,20 @@ function toggleTestimonial(index: number) {
     </section>
 
     <!-- La femme derrière le divan -->
-    <section class="section-spacing ">
+    <section class="section-spacing bg-white">
       <div class="container-page">
         <h2 class="text-center mb-14 heading-gold">La femme derrière le divan</h2>
 
         <div class="grid grid-cols-1 lg:grid-cols-5 gap-14 items-start">
           <!-- Portrait -->
           <div class="lg:col-span-2">
-            <NuxtImg src="/img/2.jpg" alt="Anna Alcaide Villanueva — Fondatrice du Divan des Sultanes" class="rounded-2xl w-full object-cover aspect-[3/4] shadow-warm-lg" loading="lazy" sizes="(max-width: 1024px) 100vw, 50vw" width="600" height="800" />
+            <NuxtImg src="/img/2.jpg" alt="Anna Alcaide Villanueva" class="rounded-2xl w-full object-cover aspect-[3/4] shadow-warm-lg" loading="lazy" sizes="xs:100vw sm:100vw md:100vw lg:40vw" width="600" height="800" />
           </div>
 
           <!-- Bio -->
           <div class="lg:col-span-3 prose-divan text-justify">
-            <p class="text-lg font-medium text-muted-foreground">Fondatrice du Divan des Sultanes</p>
             <p>
-              Coach professionnelle certifiée (Coach & Team®), Anna Alcaide Villanueva accompagne depuis plus de dix ans les dirigeants et les managers face aux défis complexes du leadership : le pouvoir, le contrôle, la solitude et la responsabilité.
+              Coach professionnelle certifiée (Coach &amp; Team®), Anna Alcaide Villanueva accompagne depuis plus de dix ans les dirigeants et les managers face aux défis complexes du leadership : le pouvoir, le contrôle, la solitude et la responsabilité.
             </p>
             <p>
               Son approche ne relève pas de la théorie, mais de l'expérience vécue. Ancienne cheffe de cuisine et directrice de restauration dans l'hôtellerie haut de gamme, elle connaît intimement la pression des milieux ultra-exigeants et la nécessité d'une maîtrise absolue pour tenir le cap.
@@ -164,8 +166,9 @@ function toggleTestimonial(index: number) {
               À la suite d'un profond changement de posture intérieure, elle a fondé Le Divan des Sultanes. Sa mission aujourd'hui : aider les femmes et les leaders à habiter leur rôle autrement. Elle les guide pour cesser de confondre puissance et dureté, et pour transformer leur manière de diriger sans jamais renoncer à leur niveau d'exigence.
             </p>
 
-
-            <p class="signature text-3xl md:text-5xl mt-8">Anna</p>
+            <div class="mt-8">
+              <NuxtImg src="/img/Signature_Anna.png" alt="Signature Anna" class="h-16 md:h-20 w-auto" loading="lazy" height="80" />
+            </div>
           </div>
         </div>
       </div>
@@ -173,9 +176,9 @@ function toggleTestimonial(index: number) {
 
     <!-- Le Seuil — CTA Banner -->
     <section class="relative overflow-hidden">
-      <NuxtImg src="/img/3.jpg" alt="Rejoindre le Divan des Sultanes" class="absolute inset-0 w-full h-full object-cover" loading="lazy" sizes="100vw" width="1920" height="1080" />
-      <div class="absolute inset-0 bg-gradient-to-r from-emerald-950/80 via-emerald-900/60 to-emerald-950/50" />
-      <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/20" />
+      <NuxtImg src="/img/3.jpg" alt="Rejoindre le Divan des Sultanes" class="absolute inset-0 w-full h-full object-cover z-0" loading="lazy" sizes="xs:100vw sm:100vw md:100vw lg:1920px" width="1920" height="1080" />
+      <div class="absolute inset-0 z-[1] bg-gradient-to-r from-stone-950/80 via-stone-900/60 to-stone-950/50" />
+      <div class="absolute inset-0 z-[1] bg-gradient-to-t from-black/40 via-transparent to-black/20" />
       <div class="relative z-10 container-page py-24 md:py-32 text-center">
         <h3 class="!text-gold-300 text-base font-semibold uppercase tracking-[0.25em] mb-4">Le seuil</h3>
         <p class="text-white/85 text-lg max-w-2xl mx-auto mb-4 leading-relaxed">

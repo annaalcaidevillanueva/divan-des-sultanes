@@ -11,7 +11,7 @@ useSeoMeta({
 <template>
   <div>
     <!-- Hero -->
-    <HeroSection image="/img/1.jpg" image-alt="Hôtellerie & Restauration de luxe — Divan des Sultanes">
+    <HeroSection image="/img/HOSPITALITE_DE_LUXE.png" image-alt="Hôtellerie & Restauration de luxe — Divan des Sultanes">
       <p class="text-gold-300 text-sm font-semibold uppercase tracking-[0.25em] mb-4">Expertise sectorielle</p>
       <h1 class="text-white mb-4 hero-text-shadow">Hôtellerie &amp; Restauration de luxe</h1>
       <p class="text-lg md:text-xl text-white/85 max-w-2xl mx-auto">
@@ -77,7 +77,7 @@ useSeoMeta({
     <section class="section-spacing bg-cream-section">
       <div class="container-page text-center">
         <h2 class="mb-4 heading-gold">Échanger sur votre situation</h2>
-        <p class="text-muted-foreground mb-10 max-w-lg mx-auto">Un premier échange de 15 minutes pour comprendre votre situation, cerner vos enjeux et voir si un accompagnement peut être pertinent.</p>
+        <p class="text-muted-foreground mb-10 max-w-lg mx-auto">Un premier échange de 15 minutes pour avoir une première lecture de votre situation, approcher vos enjeux et voir si un accompagnement peut être pertinent.</p>
         <CtaButton href="https://cal.com/anna-alcaide-villanueva-divan-des-sultanes/15min" arrow>
           Prenons 15 minutes
         </CtaButton>

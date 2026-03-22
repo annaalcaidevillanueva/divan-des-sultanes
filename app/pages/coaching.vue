@@ -14,7 +14,7 @@ useSeoMeta({
   <div>
     <!-- Hero -->
     <HeroSection image="/img/5.jpg" image-alt="Coaching — Divan des Sultanes">
-      <p class="text-gold-300 text-sm font-semibold uppercase tracking-[0.25em] mb-4">Accompagnement individuel et d'équipe</p>
+      <p class="text-gold-300 text-sm font-semibold uppercase tracking-[0.25em] mb-4">Accompagnement individuel et collectif</p>
       <h1 class="text-white mb-4 hero-text-shadow">Coaching</h1>
       <p class="text-lg md:text-xl text-white/85 max-w-2xl mx-auto">
         Déplacer sa posture pour pacifier les relations et susciter l'engagement,<br>
@@ -108,10 +108,17 @@ useSeoMeta({
         <h2>Modalités</h2>
         <p>Les séances se déroulent<br>
         &nbsp;en visioconférence<br>
-        &nbsp;ou en présentiel.<br>
-        &nbsp;Dans ce cas, les frais de déplacement sont pris en charge.</p>
+        &nbsp;ou en présentiel.</p>
+        <p>Les frais de déplacement du coach sont pris en charge en cas d'intervention en présentiel.</p>
         <p>Chaque accompagnement débute par un échange préalable.<br>
         &nbsp;Un temps simple pour vérifier que votre besoin et le cadre proposé sont justes.</p>
+        <p>Le coaching peut être engagé à titre individuel<br>
+        &nbsp;ou à la demande d'une entreprise.</p>
+        <p>Dans ce cas, un temps de cadrage est prévu avec le commanditaire afin de clarifier les objectifs, les modalités de l'accompagnement et les conditions de réussite.</p>
+        <p>Le coaching reste un espace confidentiel.<br>
+        &nbsp;Les échanges ne font l'objet d'aucune restitution de contenu, sauf accord explicite de la personne accompagnée.<br>
+        &nbsp;Un point d'étape peut être proposé avec l'entreprise, dans le respect de ce cadre.</p>
+        <p>Le rythme et la durée de l'accompagnement sont définis ensemble, en fonction de la situation et des enjeux.</p>
         <p>Le coaching individuel est un espace de responsabilité.<br>
         &nbsp;Un lieu où l'on peut penser autrement.<br>
         &nbsp;Sans masque. Sans performance.</p>
@@ -178,22 +185,22 @@ useSeoMeta({
         <p>Le travail peut prendre la forme de :</p>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-8 not-prose">
           <Card>
-            <CardHeader class="pb-2">
+            <CardHeader class="pb-2 text-center">
               <CardTitle class="text-base">Séminaires structurés</CardTitle>
             </CardHeader>
           </Card>
           <Card>
-            <CardHeader class="pb-2">
+            <CardHeader class="pb-2 text-center">
               <CardTitle class="text-base">Accompagnements sur la durée</CardTitle>
             </CardHeader>
           </Card>
           <Card>
-            <CardHeader class="pb-2">
+            <CardHeader class="pb-2 text-center">
               <CardTitle class="text-base">Séquences ponctuelles d'intervention</CardTitle>
             </CardHeader>
           </Card>
           <Card>
-            <CardHeader class="pb-2">
+            <CardHeader class="pb-2 text-center">
               <CardTitle class="text-base">Conférences thématiques</CardTitle>
             </CardHeader>
           </Card>
@@ -207,11 +214,11 @@ useSeoMeta({
       <div class="container-page text-center">
         <h2 class="mb-4 heading-gold">Échanger sur votre situation</h2>
         <p class="text-muted-foreground mb-4 max-w-lg mx-auto">Chaque mission débute par un échange préalable.</p>
-        <p class="text-muted-foreground mb-10 max-w-lg mx-auto text-sm">Ce temps permet de comprendre votre contexte, vos enjeux et d'explorer les modalités d'un accompagnement adapté.</p>
+        <p class="text-muted-foreground mb-10 max-w-lg mx-auto text-sm">Ce temps permet d'établir une première lecture de votre contexte et de vos enjeux,<br>et d'explorer les modalités d'un accompagnement adapté.</p>
         <CtaButton href="https://cal.com/anna-alcaide-villanueva-divan-des-sultanes/15min" arrow>
           Prenons 15 minutes
         </CtaButton>
-        <p class="text-xs text-muted-foreground mt-4 italic">Un premier échange de 15 minutes pour comprendre votre situation, cerner vos enjeux et voir si un accompagnement peut être pertinent.</p>
+        <p class="text-xs text-muted-foreground mt-4 italic">Un premier échange de 15 minutes pour avoir une première lecture de votre situation, approcher vos enjeux et voir si un accompagnement peut être pertinent.</p>
       </div>
     </section>
   </div>
